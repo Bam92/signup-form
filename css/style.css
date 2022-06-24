@@ -12,19 +12,33 @@ body {
 }
 main {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
+    gap: 1.5em;
     height: 80vh;
     width: 80vw;
     border: 2px solid;
 }
 
 section {
-    padding: 3.5em;
-    background-color: blueviolet;
     border-radius: 3px;
+    width: 50%;
+    /* height: 100%; */
 }
 
-section:last-child {
-    background-color: green;
+/*================
+Style for the form
+*/
+form {
+    /* height: 70%; */
+    gap: .9em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+input {
+    padding: .9em;
+    border-radius: 3px;
+    border: 1px solid gray;
 }
