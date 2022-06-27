@@ -6,10 +6,16 @@
     --color-blue: hsl(248, 32%, 49%);
     --color-dark-blue: hsl(249, 10%, 26%);
     --color-grayish-blue: hsl(246, 25%, 77%);
+    --color-box-shadow: rgb(0 0 0 / 0.2);
 }
 
 * {
     box-sizing: border-box;
+}
+
+body,
+input {
+    font-family: 'Poppins', sans-serif;
 }
 
 body {
@@ -20,7 +26,6 @@ body {
     align-items: center;
     justify-content: center;
     height: 100vh;
-    font-family: 'Poppins', sans-serif;
 }
 
 main {
@@ -37,15 +42,26 @@ section {
     width: 50%;
 }
 
+h1 {
+    font-size: 3em;
+    font-weight: 700;
+    line-height: 1em;
+}
+
+section:nth-child(1) p {
+    font-weight: 600;
+}
+
 section:nth-child(2) > button {
     background-color: var(--color-blue);
     width: 100%;
     border: 1px solid var(--color-grayish-blue);
-    border-radius: 5px;
-    padding: 1em;
+    border-radius: 10px;
+    padding: 1.3em;
     color: #fff;
-    margin-bottom: 1em;
-    box-shadow: 2px 5px rgb(0 0 0 / 0.2);
+    margin-bottom: 1.5em;
+    /* box-shadow: 2px 5px var(--color-box-shadow); */
+    border: none;
 }
 
 #free-try-button {
@@ -62,24 +78,25 @@ form {
     justify-content: space-between;
     background-color: #fff;
     padding: 1.5em;
-    border-radius: 5px;
+    border-radius: 10px;
     color: #000;
-    box-shadow: 3px 8px rgb(0 0 0 / 0.2);
+    box-shadow: 3px 8px var(--color-box-shadow);
 }
 
 input {
-    padding: .9em;
-    border-radius: 5px;
+    padding: 1.3em;
+    border-radius: 10px;
     border: 1px solid var(--color-grayish-blue);
+    font-weight: 500;
 }
 
 input[type="button"] {
     background-color: var(--color-green);
     color: #fff;
-    box-shadow: 1px 2px teal;
     text-transform: uppercase;
     font-weight: 600;
-    box-shadow: 2px 3px rgb(0 0 0 / 0.2);
+    box-shadow: 3px 8px var(--color-green);
+    border: none;
 }
 
 small {
