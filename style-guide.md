@@ -33,3 +33,9 @@ The designs were created to the following widths:
 
 - Family: [Poppins](https://fonts.google.com/specimen/Poppins)
 - Weights: 400, 500, 600, 700
+
+## js validation
+* Username cannot be blank and has at least 3 characters and cannot be longer than 25 characters.
+* Email is mandatory and valid.
+* Password has eight characters or longer. And it must contain 1 lowercase character, 1 uppercase character, 1 number, and at least one special character in this set (!@#$%^&*).
+* The confirm password must be the same as the password.
